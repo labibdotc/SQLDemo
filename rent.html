@@ -9,6 +9,12 @@
     </head>
     <body action = "testDatabase.php">
         <h1>Hopefully we have your book!! :)</h1>
+            <form method = 'post' action = "reduceCopies.php">
+            <div class='book_name'>Name it, we find it for you: </div>
+            <div class='book_name2'><input type = "text" name = 'book'/></div>
+            <div class='book_name'>&nbsp;</div>
+            <div class='submit'><input type = "submit"/></div>
+        </form>
         <script>
             <?php
         // $server = "localhost";
@@ -53,12 +59,6 @@
         $conn->close();
     ?>
         </script>
-         <form method = 'post' action = "reduceCopies.php">
-            <div class='book_name'>Name it, we find it for you: </div>
-            <div class='book_name2'><input type = "text" name = 'book'/></div>
-            <div class='book_name'>&nbsp;</div>
-            <div class='submit'><input type = "submit"/></div>
-        </form>
         
 
     </body>
